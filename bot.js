@@ -65,7 +65,7 @@ hngel.on('message', function(message) {
     const mess = message.content.toLowerCase();
     const args = message.content.split(' ').slice(1).join(' ');
 
-    if (mess.startsWith(prefix + 'play')) {
+    if (mess.startsWith(prefix + 'play','p')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
         // if user is not insert the URL or song title
         if (args.length == 0) {
@@ -113,7 +113,7 @@ return;
             });
         }
     }
-    else if (mess.startsWith(prefix + 'skip')) {
+    else if (mess.startsWith(prefix + 'skip','s')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
         message.channel.send('`✔`').then(() => {
             skip_song(message);
