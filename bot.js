@@ -114,7 +114,7 @@ return;
             });
         }
     }
-    else if (mess.startsWith(prefix + 'skip','s')) {
+    else if (mess.startsWith(prefix + 'skip')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
         message.channel.send('`✔`').then(() => {
             skip_song(message);
