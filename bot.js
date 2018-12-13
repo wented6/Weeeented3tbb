@@ -15,7 +15,7 @@ hngel.login(discord_token);
 
 
 hngel.on('ready', function() {
-    console.log(`i am ready by:mr 3tbb${hngel.user.username}`);
+    console.log(`i am ready by:mr hngrl${hngel.user.username}`);
    
          //by : mr hngrl
 
@@ -65,8 +65,7 @@ hngel.on('message', function(message) {
     const mess = message.content.toLowerCase();
     const args = message.content.split(' ').slice(1).join(' ');
 
-      if (mess.startsWith(prefix +'p')) 
-if (mess.startsWith(prefix + 'play')) {
+    if (mess.startsWith(prefix + 'play')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
         // if user is not insert the URL or song title
         if (args.length == 0) {
@@ -234,8 +233,8 @@ function search_video(query, cb) {
 
          //by : mr hngrl
 
-const adminprefix = "M";  
-const devs = ['320423357709549568'];  
+const adminprefix = "!";  
+const devs = ['521341978659651596'];  
 hngel.on('message', message => {  
   var argresult = message.content.split(` `).slice(1).join(' ');  
     if (!devs.includes(message.author.id)) return;  
